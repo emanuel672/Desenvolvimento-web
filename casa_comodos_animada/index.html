@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emanuel Davi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!-- Importa a folha de estilos normalize.min.css -->
+  <link rel="stylesheet" href="./style.css"> <!-- Importa o arquivo de estilos style.css -->
+</head>
+<body>
+
+<div class="house" id="house" data-rooms="6"> <!-- Div que representa a casa, com o ID 'house' e o atributo 'data-rooms' inicializado com o valor '6' -->
+  <div class="house-wings" data-flip-key="wings"> <!-- Div para asas da casa -->
+    <div class="house-left-wing"> <!-- Div para a asa esquerda da casa -->
+      <div class="house-window"></div> <!-- Div para janela da asa esquerda -->
+      <div class="house-window"></div> <!-- Div para janela da asa esquerda -->
+      <div class="house-sparkle"> <!-- Div para brilho da asa esquerda -->
+        <div class="house-sparkle-dots"></div> <!-- Div para pontos de brilho da asa esquerda -->
+      </div>
+    </div>
+    <div class="house-right-wing"> <!-- Div para a asa direita da casa -->
+      <div class="house-window"></div> <!-- Div para janela da asa direita -->
+      <div class="house-window"></div> <!-- Div para janela da asa direita -->
+      <div class="house-sparkle"> <!-- Div para brilho da asa direita -->
+        <div class="house-sparkle-dots"></div> <!-- Div para pontos de brilho da asa direita -->
+      </div>
+    </div>
+    <div class="house-roof"> <!-- Div para o telhado da casa -->
+      <div class="house-ledge"></div> <!-- Div para a borda do telhado da casa -->
+    </div>
+  </div>
+  <div class="house-front" data-flip-key="front"> <!-- Div para a frente da casa -->
+    <div class="house-chimney"></div> <!-- Div para a chaminé da casa -->
+    <div class="house-facade"></div> <!-- Div para a fachada da casa -->
+    <div class="house-window"> <!-- Div para janela da frente da casa -->
+      <div class="house-sparkle"> <!-- Div para brilho da janela da frente da casa -->
+        <div class="house-sparkle-dots"></div> <!-- Div para pontos de brilho da janela da frente da casa -->
+      </div>
+    </div>
+    <div class="house-doorway"> <!-- Div para a entrada da casa -->
+      <div class="house-stairs"></div> <!-- Div para escadas da entrada da casa -->
+      <div class="house-door"></div> <!-- Div para a porta da entrada da casa -->
+    </div>
+    <div class="house-gable"> <!-- Div para o gable da casa -->
+      <div class="house-roof"> <!-- Div para o telhado do gable da casa -->
+        <div class="house-ledge"></div> <!-- Div para a borda do telhado do gable da casa -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<label class="house-label" for="range" id="label">Comodos </label> <!-- Label para mostrar o número de cômodos -->
+<input type="range" min="3" max="6" step="1" value="6" id="range"> <!-- Input range para selecionar o número de cômodos -->
+
+<script src='https://unpkg.com/flipping@0.5.3/dist/flipping.animationFrame.js'></script> <!-- Importa o script flipping.animationFrame.js -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js'></script> <!-- Importa a biblioteca RxJS -->
+<script src="./script.js"></script> <!-- Importa o script JavaScript personalizado -->
+
+</body>
+</html>
